@@ -5,7 +5,16 @@ export default {
   "./resources/**/*.vue",
   "./node_modules/flowbite/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+        colors: {
+            primary: '#780000',
+            secondary: '#64748b',
+            dark: '#0f172a',
+          },
+          screens: {
+            '2xl' : '1320px'
+          }
+    },
   },
   plugins: [ require('flowbite/plugin')
 ],

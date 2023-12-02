@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aurelia Medika | Home</title>
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+    {{-- TailwindCSS dan Library FLowbite --}}
+    @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body>
     @include('partials.navbar')
 
-    <div class="container uk-margin-small-top uk-margin-xlarge-left">
+    <div class="container ">
         @yield('container')
     </div>
 
 
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
 </body>
+{{-- Javascript --}}
+<script src="/js/script.js"></script>
 </html>
