@@ -7,13 +7,21 @@
     <title>Aurelia Medika | Home</title>
     {{-- TailwindCSS dan Library FLowbite --}}
     @vite(['resources/css/app.css','resources/js/app.js'])
+
+    {{-- Fonts Google - Poppins --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    {{-- CSS --}}
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     @include('partials.navbar')
 
-    <div class="container ">
+
         @yield('container')
-    </div>
+
 
 
 </body>

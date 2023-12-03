@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EDF2F4;
+}
 
 .navbar-fixed {
     @apply fixed z-[9999] bg-white bg-opacity-70;

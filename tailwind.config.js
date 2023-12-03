@@ -8,7 +8,7 @@ export default {
     extend: {
         colors: {
             primary: '#780000',
-            secondary: '#64748b',
+            secondary: '#003049',
             dark: '#0f172a',
           },
           screens: {
