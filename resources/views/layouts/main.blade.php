@@ -7,7 +7,8 @@
     <title>Aurelia Medika | Home</title>
     {{-- TailwindCSS dan Library FLowbite --}}
     @vite(['resources/css/app.css','resources/js/app.js'])
-
+    {{-- Tailwind --}}
+    <script src="https://cdn.tailwindcss.com"></script>
     {{-- Fonts Google - Poppins --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
