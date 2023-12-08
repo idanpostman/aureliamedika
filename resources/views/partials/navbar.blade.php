@@ -1,9 +1,9 @@
 <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
     <div class="container">
-        <div class="flex items-center justify-between relative ">
-            <div class="px-4">
+        <div class="flex items-center justify-between relative">
+            <div class="px-6">
                 <a href="#home" class="block py-4 pl-2">
-                    <img src="/img/logo-merah.png" width="220px" alt="aureliamedika">
+                    <img  src="/img/logo-merah.png" width="220px" alt="aureliamedika">
                 </a>
             </div>
             <div class="flex items-center px-4">
