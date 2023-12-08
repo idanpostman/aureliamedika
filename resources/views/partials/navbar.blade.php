@@ -1,4 +1,4 @@
-<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+<header class="bg-transparent fixed top-0 left-0 w-full flex items-center z-10">
     <div class="container">
         <div class="flex items-center justify-between relative">
             <div class="px-6">
@@ -29,13 +29,17 @@
 
                 @guest
                     <li class="group my-4 mx-10 lg:my-0 lg:mx-4">
-                        <a href="/register" <button class="text-base font-semibold text-white bg-primary py-3 px-5 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 ">Register</button></a>
+                        <a href="/register">
+                        <button class="text-base font-medium text-white bg-primary py-3 px-5 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 ">Register</button>
+                    </a>
                     </li>
                     <li class="group mx-10 lg:mx-0">
-                        <a href="/login"<button class="text-base font-semibold text-white bg-slate-500 py-3 px-7 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 ">Login</button></a>
+                        <a href="/login">
+                            <button class="text-base font-medium text-white bg-secondary py-3 px-7 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 ">Login</button>
+                        </a>
                     </li>
                     </ul>
-                @endguest  
+                @endguest
                 @auth
                     <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
