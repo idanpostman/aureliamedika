@@ -71,6 +71,7 @@
           </section>
         {{-- Poli End --}}
 
+        {{-- Hitung start --}}
         <section id="hitung" class=" pt-8 pb-4 bg-white">
             <div class="container items-center lg:flex ">
                 <div class="w-3/5 mx-auto my-16 lg:w-full lg:ml-14">
@@ -128,6 +129,33 @@
                 </div>
             </div>
         </section>
+        {{-- Hitung start --}}
+
+
+
+            <!-- About Section Start -->
+        <section id="about" class="pt-8 pb-12">
+            <div class="container">
+                <div class="flex flex-wrap lg:grid lg:grid-cols-2">
+                    <div class="w-full px-10">
+                        <img src="/img/about-us.jpg" class="w-[400x] h-[300px] rounded-lg shadow-xl lg:w-[500px] lg:h-[400px]" alt="">
+
+                        <img src="/img/doctors-about-us1.jpg" class="w-[250px] h-[150px] rounded-2xl -translate-y-32 translate-x-44 shadow-2xl lg:w-[300px] lg:h-[200px] lg:-translate-y-36 lg:translate-x-60 "  alt="">
+                    </div>
+                    <div class="w-full px-10">
+                        <h4 class="font-bold uppercase text-primary mt-[-50px]  mb-2 text-4xl lg:mt-0">About us</h4>
+                        <p class="font-normal text-base text-secondary max-w-xl lg:text-lg">
+                            <span class="font-semibold text-secondary text-xl max-w-md lg:text-2xl"> Aurelia Medika</span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque debitis earum! Repellendus nisi recusandae quia dolores quam. Deserunt voluptas ipsum voluptatum nihil ducimus natus inventore dolores placeat accusantium nulla hic maiores, libero atque autem repudiandae enim quaerat adipisci amet reiciendis ipsa eum. Voluptates provident ipsum, aliquam repudiandae quo recusandae obcaecati, expedita dolorem blanditiis labore debitis earum sed. Dicta deserunt maiores obcaecati aliquid earum sit vero, sint, dolores repellendus nisi nostrum. Dolorem eius, maiores tenetur optio suscipit dolor accusantium reiciendis tempora a, nihil odit. Veritatis reiciendis, laboriosam accusantium eligendi itaque, facilis iusto a aspernatur sapiente tenetur libero saepe quaerat nesciunt?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- About section End -->
+
+
+
 
 @endsection
 
