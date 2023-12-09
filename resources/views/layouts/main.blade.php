@@ -26,6 +26,9 @@
 
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
 {{-- Javascript --}}
 <script src="/js/script.js"></script>
 </html>
