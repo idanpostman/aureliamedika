@@ -205,3 +205,80 @@
   </section>
     {{-- Our Doctor End --}}
 
+    {{-- Contact Start --}}
+
+    <section id="contact" class="pt-16 pb-32">
+        <div class="container">
+            <div class="max-w-xl mx-auto text-center">
+                <h2 class="font-bold text-primary text-3xl mb-16 lg:text-5xl">Contact</h2>
+            </div>
+            <div class="flex flex-wrap">
+                 {{-- Lokasi --}}
+                <div class="w-full lg:w-1/2">
+                    <div class="flex flex-wrap px-4 py-4 lg:px-16">
+                        <div class="flex items-center justify-center rounded-full bg-primary h-[45px] w-[45px]">
+                                <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path fill="#ffffff" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                            </svg>
+                        </div>
+                        <div class="px-4 w-3/4">
+                            <h5 class="font-bold text-secondary text-lg max-w-md lg:text-xl">Lokasi:</h5>
+                            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Jl. Raya Kopo No.16, Kota Bandung, Jawa Barat 40233</p>
+                        </div>
+                    </div>
+                    {{-- Lokasi End --}}
+                    {{-- Email Start --}}
+                    <div class="flex flex-wrap px-4 py-4 lg:px-16">
+                        <div class="flex items-center justify-center rounded-full bg-primary h-[45px] w-[45px]">
+                            <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path fill="#ffffff" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                            </svg>
+                        </div>
+                        <div class="px-4 w-3/4">
+                            <h5 class="font-bold text-secondary text-lg max-w-md lg:text-xl">Email:</h5>
+                            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">aureliamedika@example.org</p>
+                        </div>
+                    </div>
+                    {{-- Email End --}}
+                    {{-- Phone Start --}}
+                    <div class="flex flex-wrap px-4 py-4 lg:px-16">
+                        <div class="flex items-center justify-center rounded-full bg-primary h-[45px] w-[45px]">
+                            <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path fill="#ffffff" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+                            </svg>
+                        </div>
+                        <div class="px-4 w-3/4">
+                            <h5 class="font-bold text-secondary text-lg max-w-md lg:text-xl">Telepon:</h5>
+                            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">+62 1402252</p>
+                        </div>
+                    </div>
+                </div>
+            {{-- Phone End --}}
+                    <form action="">
+                        <div class="flex flex-wrap w-full items-center justify-center lg:w-[620px]">
+                            <div class="w-full px-4 mb-8">
+                                    <label for="name" class="text-base font-bold text-primary">Name</label>
+                                    <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                                </div>
+                            <div class="w-full px-4 mb-8">
+                                <label for="email" class="text-base font-bold text-primary">Email</label>
+                                <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                            </div>
+                            <div class="w-full px-4 mb-8">
+                                <label for="message" class="text-base font-bold text-primary">Message</label>
+                                <textarea type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                            </div>
+                            <div class="max-w-[250px] text-center mx-auto lg:w-full">
+                                <div class="flex justify-center items-center">
+                                    <button class="text-base text-center font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+
+
+@endsection
