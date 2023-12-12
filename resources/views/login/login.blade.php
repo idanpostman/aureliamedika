@@ -51,7 +51,7 @@
 
 
 
-                <span class="mb-3 text-center text-lg font-bold">Login ke Aurelia Medika</span>
+                <span class="mb-3 text-center text-lg font-bold">Login To Aurelia Medika</span>
                 <form action="/login" method="post">
                 @csrf
                 <div class="pt-4">
@@ -83,9 +83,9 @@
                 Login with Google
                 </button>
                 <div class="text-center text-secondary">
-                Dont'have an account?
+                Dont have an account?
                 <a href="/register">
-                    <span class="font-bold text-black">Register</span>
+                    <span class="font-bold text-primary hover:text-secondary">Register</span>
                 </a>
                 </div>
             </div>
