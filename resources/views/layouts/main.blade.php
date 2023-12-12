@@ -23,6 +23,8 @@
 
         @yield('container')
 
+    @include('partials.footer')
+
 
 
 </body>

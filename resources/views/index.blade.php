@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="w-full self-center px-16 lg:w-1/2">
-                        <h1 class="block font-bold text-secondary text-4xl uppercase mb-1 lg:text-6xl">Selamat Datang</h1>
+                        <h1 class="block font-bold text-secondary text-4xl uppercase mb-1 lg:text-5xl">Selamat Datang</h1>
                         <h2 class="font-medium text-secondary text-lg mb-5 lg:text-4xl">di
                            <span class="text-secondary font-bold">Aurelia Medika</span>
                         </h2>
@@ -278,6 +278,7 @@
                 </div>
             </div>
     </section>
+    {{-- Contact End --}}
 
 
 
