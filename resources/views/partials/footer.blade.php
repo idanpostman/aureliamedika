@@ -3,11 +3,6 @@
     <div class="flex flex-wrap px-12 lg:px-16">
         <div class="w-full pr-4 mb-12 text-slate-300 font-medium md:w-1/4">
             <h2 class="font-bold text-4xl text-white mb-5">Aurelia Medika</h2>
-            <h3 class="font-bold text-2xl mb-2">Contact Us</h3>
-            <p>aureliamedika@example.org</p>
-            <p>Jl. Raya Kopo No.16, </p>
-            <p>Kota Bandung,</p>
-            <p>Jawa Barat 40233</p>
         </div>
         <div class="w-full  mb-12 md:w-1/4 lg:px-16">
             <h3 class="font-semibold text-xl text-white mb-5">Antrian</h3>
