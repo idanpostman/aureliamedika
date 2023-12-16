@@ -7,8 +7,8 @@
        <h2 class="text-secondary font-semibold text-32x1 font-poppins">Halaman muka dari klinik anda, overview hal-hal mengenai klinik anda</h2>
    </div>
 <div class=" sm:ml-64">
-    <div class="p-2 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 ">
-      <section id="hitung"> 
+    <div class="p-2 border-2 border-gray-200 border-dashed rounded-lg">
+      <section id="hitung">
       <div class="grid grid-cols-4 gap-4 mb-4">
          <div class="w-3/5 mx-auto my-16 lg:w-full">
             <div class="block max-w-sm mb-5 bg-[#EDF2F4] border text-center border-gray-200 rounded-lg shadow hover:bg-gray-100">
@@ -68,5 +68,5 @@
        </div>
     </div>
  </div>
- 
+
 @endsection

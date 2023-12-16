@@ -24,10 +24,10 @@
     @include('dashboard.layout.navbar')
     @include('dashboard.layout.sidebar')
 
-     
+
 
     @yield('container')
-    
+
 
 
 
@@ -37,7 +37,9 @@
 <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 
 {{-- Javascript --}}
-<script src="../js/script.js"></script>
+<script>
+    new PureCounter();
+</script>
 
 {{-- Flowbite Plugins Js --}}
 </html>

@@ -24,7 +24,7 @@
         {{-- Poli Start --}}
          <section id="poli" class="pb-8">
                 <div class="container">
-                <div class="-translate-y-20 px-16 gap-3 lg:flex">
+                <div class="-translate-y-28 px-16 gap-3 lg:flex">
                     <div class="w-full flex items-stretch lg:mr-5">
                         <div class="max-w-sm mx-auto mb-6 p-6 bg-primary border border-gray-200 rounded-lg shadow ">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Sistem Antrian Online!</h5>
