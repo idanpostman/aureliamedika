@@ -1,3 +1,13 @@
+/* * {
+    margin:auto;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EDF2F4;
+}
+
+
 .jumbotron {
     background-image: url(../img/bg-home3.jpeg);
     background-size: cover;

@@ -31,6 +31,9 @@
                       </div>
                       <ul class="py-2" aria-labelledby="user-menu-button">
                         <li>
+                          <a href="/" class="drop block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a>
+                        </li>
+                        <li>
                           <a href="/logout" class="drop block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Log out</a>
                         </li>
                       </ul>
