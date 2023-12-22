@@ -62,6 +62,9 @@
                     name="email"
                     id="email"
                 />
+                @if ($errors->has('email'))
+                   <span>{{ $errors->first('email') }}</span>
+                @endif
                 </div>
                 <div class="py-4">
                 <span class="mb-2 text-md">Password</span>
@@ -71,17 +74,23 @@
                     id="password"
                     class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
                 />
+                @if ($errors->has('password'))
+                   <span>{{ $errors->first('password') }}</span>
+                @endif
                 </div>
                 <button
                 class="w-full bg-primary text-white p-2 rounded-lg mb-4  hover:opacity-90 hover:shadow-lg transition duration-500"
                 >
                 Login
                 </button>
-                <button class="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 hover:bg-secondary hover:text-white">
             </form>
+                <a onclick="window.location.href='{{ route('google.login') }}'">
+                <button class="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 hover:bg-secondary hover:text-white">
+            
                 <img src="./img/google.svg" alt="img" class="w-6 h-6 inline mr-2" />
                 Login with Google
                 </button>
+                </a>
                 <div class="text-center text-secondary">
                 Dont have an account?
                 <a href="/register">

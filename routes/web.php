@@ -1,10 +1,13 @@
 <?php
 
+use App\Http\Controllers\Auth\ProviderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardPasienController;
+use App\Http\Controllers\GoogleController;
+use Laravel\Socialite\Facades\Socialite;
 
 
 
@@ -36,7 +39,11 @@ Route::middleware(['guest'])->group(function(){
 
 });
 
-
+//login google
+Route::get('/auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.login');
+Route::get('/auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+Route::get('/register/google', [GoogleController::class, 'index']);
+Route::post('/register/google', [GoogleController::class, 'store']);
 
 Route::get('/logout', [LoginController::class, 'logout']);
 

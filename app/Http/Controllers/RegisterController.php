@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace App\Http\Controllers;
 
@@ -17,16 +17,21 @@ return view('register.register');
 
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'name' => 'required|max:255',
-            'username' => ['required','min:3','max:255','unique:users'],
-            'email' => 'required|email|unique:users',
+        $validateData = $request->validate([
+            'name' => 'required|min:3|max:255',
+            'email' => 'required|email:dns|unique:users',
             'password' => 'required|min:5|max:255'
         ]);
         
+        $validateData['password'] = bcrypt($validateData['password']);
 
-        User::create($validatedData);
-        // session()->flash('success', 'Registration Successfull! Please Login');
-        return redirect('/login')->with('success', 'Registration Successfull! Please Login');
+        if (User::where('email', $validateData['email'])->value('google_id')) {
+            return redirect('/login')->with('error', 'Email already registered with Google!');
+        }
+
+        User::create($validateData);
+
+        return redirect('/login')->with('success', 'Register Success!');
     }
 }
+
