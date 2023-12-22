@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #EDF2F4;
-}
 
 .navbar-fixed {
     @apply fixed z-[9999] bg-white bg-opacity-70;
@@ -27,3 +23,4 @@ body {
 .hamburger-active > span:nth-child(3){
     @apply -rotate-45;
 }
+

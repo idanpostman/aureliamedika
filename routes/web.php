@@ -23,6 +23,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/antrian', function () {
+    return view('antrian');
+});
+
 
 Route::middleware(['guest'])->group(function(){
     Route::get('/login', [LoginController::class, 'index']);

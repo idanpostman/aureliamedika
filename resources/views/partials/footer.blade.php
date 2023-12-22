@@ -1,5 +1,5 @@
 <footer class="bg-dark pt-24 pb-12">
-    <div class="container">
+    <div class="container mx-auto   ">
     <div class="flex flex-wrap px-12 lg:px-16">
         <div class="w-full pr-4 mb-12 text-slate-300 font-medium md:w-1/4">
             <h2 class="font-bold text-4xl text-white mb-5">Aurelia Medika</h2>

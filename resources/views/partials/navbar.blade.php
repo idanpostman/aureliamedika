@@ -1,5 +1,5 @@
 <header class="bg-transparent fixed top-0 left-0 w-full flex items-center z-10">
-    <div class="container">
+    <div class="container mx-auto">
         <div class="flex items-center justify-between relative">
             <div class="px-6">
                 <a href="#home" class="block py-4 pl-2">
@@ -51,7 +51,6 @@
                                     </svg>
                             </button>
                     </div>
-
                     <!-- Dropdown menu -->
                     <div class="z-50 hidden my-4 text-base list-none bg-[#EDF2F4] divide-y divide-gray-300 rounded-lg shadow" id="user-dropdown">
                       <div class="px-4 py-3">
@@ -59,6 +58,9 @@
                         <span class="block text-sm  text-gray-500 truncate">{{ auth()->user()->email }}</span>
                       </div>
                       <ul class="py-2" aria-labelledby="user-menu-button">
+                          <li>
+                            <a href="/dashboard" class="drop block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</a>
+                          </li>
                         <li>
                           <a href="/logout" class="drop block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Log out</a>
                         </li>

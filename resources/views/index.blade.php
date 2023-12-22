@@ -3,7 +3,7 @@
 @section('container')
         <!-- Hero Section Start -->
         <section id="home" class="jumbotron pt-36">
-            <div class="container">
+            <div class="container mx-auto">
                 <div class="flex flex-wrap">
                     <div class="w-full self-center px-16 lg:w-1/2">
                         <h1 class="block font-bold text-secondary text-4xl uppercase mb-1 lg:text-5xl">Selamat Datang</h1>
@@ -13,7 +13,9 @@
                         <p class="font-medium text-secondary mb-7 leading-relaxed">Lorem ipsum dolor sit amet consectetur.
                             <span class="text-secondary font-bold">Ambil Antrian!</span>
                         </p>
-                        <button class="text-base font-medium uppercase text-white bg-primary py-3 px-5 rounded-full  hover:opacity-80 hover:shadow-lg transition duration-500 ">Ambil Antrian</button>
+                        <a href="/antrian">
+                            <button class="text-base font-medium uppercase text-white bg-primary py-3 px-5 rounded-full  hover:opacity-80 hover:shadow-lg transition duration-500 ">Ambil Antrian</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -23,7 +25,7 @@
 
         {{-- Poli Start --}}
          <section id="poli" class="pb-8">
-                <div class="container">
+                <div class="container mx-auto ">
                 <div class="-translate-y-28 px-16 gap-3 lg:flex">
                     <div class="w-full flex items-stretch lg:mr-5">
                         <div class="max-w-sm mx-auto mb-6 p-6 bg-primary border border-gray-200 rounded-lg shadow ">
@@ -71,7 +73,7 @@
 
         {{-- Hitung start --}}
         <section id="hitung" class=" pt-8 pb-4 bg-white">
-            <div class="container items-center lg:px-16 lg:flex ">
+            <div class="container mx-auto items-center lg:px-16 lg:flex ">
                 <div class="w-3/5 mx-auto my-16 lg:w-full">
                     <div class="block max-w-sm mb-5 bg-[#EDF2F4] border text-center border-gray-200 rounded-lg shadow hover:bg-gray-100">
                         <div class="flex items-center justify-center">
@@ -131,7 +133,7 @@
 
             <!-- About Section Start -->
         <section id="about" class="pt-8 pb-12">
-            <div class="container">
+            <div class="container mx-auto">
                 <div class="flex flex-wrap lg:grid lg:grid-cols-2">
                     <div class="w-full px-16">
                         <img src="/img/about-us.jpg" class="w-[400x] h-[300px] rounded-lg shadow-xl lg:w-[500px] lg:h-[400px]" alt="">
@@ -153,7 +155,7 @@
     {{-- Our Doctor start --}}
 
     <section id="doctor" class="pt-16 pb-32 bg-white">
-        <div class="container">
+        <div class="container mx-auto">
             <div class="max-w-xl mx-auto text-center mb-16">
                 <h2 class="font-bold text-primary text-3xl lg:text-5xl">Our Doctor</h2>
             </div>
@@ -208,7 +210,7 @@
     {{-- Contact Start --}}
 
     <section id="contact" class="pt-16 pb-32">
-        <div class="container">
+        <div class="container mx-auto">
             <div class="max-w-xl mx-auto text-center">
                 <h2 class="font-bold text-primary text-3xl mb-16 lg:text-5xl">Contact</h2>
             </div>

@@ -20,8 +20,9 @@
 <body>
     @include('partials.navbar')
 
-
+    <div class="mt-4">
         @yield('container')
+    </div>
 
     @include('partials.footer')
 
