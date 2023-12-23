@@ -44,7 +44,7 @@
                     <div class="flex  items-center ml-16 mt-2 lg:mt-0  text-secondary hover:text-primary">
                             <button type="button" class="text-base mr-[70px] lg:mr-0 inline-flex font-bold" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
                                 <span class="sr-only"></span>
-                                <p class="-indent-12">Halo, {{ auth()->user()->name }}</p>
+                                <p class="-indent-28 ml-16">Halo, {{ auth()->user()->name }}</p>
                                 <div class="ml-2 mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
                                         <path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/>
@@ -58,9 +58,9 @@
                         <span class="block text-sm  text-gray-500 truncate">{{ auth()->user()->email }}</span>
                       </div>
                       <ul class="py-2" aria-labelledby="user-menu-button">
-                          <li>
-                            <a href="/dashboard" class="drop block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</a>
-                          </li>
+                        <li>
+                          <a href="/dashboard" class="drop block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</a>
+                        </li>
                         <li>
                           <a href="/logout" class="drop block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Log out</a>
                         </li>
