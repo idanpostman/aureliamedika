@@ -2,7 +2,7 @@
 
 @section('container')
         <!-- Hero Section Start -->
-        <section id="home" class="jumbotron pt-36">
+        <section id="home" class="h-[550px] mt-[85px] bg-center bg-no-repeat bg-blend-multiply bg-cover pt-36" style="background-image: url('/img/bg-home3.jpeg')">
             <div class="container mx-auto">
                 <div class="flex flex-wrap">
                     <div class="w-full self-center px-16 lg:w-1/2">

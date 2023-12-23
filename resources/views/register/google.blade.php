@@ -10,9 +10,9 @@
 @endif
 
 <section class="pt-12 pb-7">
-<div class="container">
+<div class="container mx-auto">
     <div class="flex flex-col items-center justify-center">
-        <img src="./img/logo-merah.png" width="320px" alt="">
+        <img src="/img/logo-merah.png" width="320px" alt="">
     </div>
     <div class="flex flex-wrap items-center justify-center">
         <div  class="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0">
@@ -41,9 +41,11 @@
                 id="email"
                 placeholder="name@email.com" required value="{{ $google_user['email'] }}" readonly>
                 </div>
-                @if ($errors->has('email'))
-                   <span>{{ $errors->first('email') }}</span>
-                @endif
+                <div class="text-sm text-red-500">
+                    @if ($errors->has('email'))
+                    <span>{{ $errors->first('email') }}</span>
+                    @endif
+                </div>
             <div class="py-4">
                 <span class="mb-2 text-md">Password</span>
                 <input
@@ -52,9 +54,11 @@
                 name="password"
                 id="password"
                 />
-                @if ($errors->has('password'))
-                   <span>{{ $errors->first('password') }}</span>
-                @endif
+                <div class="text-sm text-red-500">
+                    @if ($errors->has('password'))
+                    <span>{{ $errors->first('password') }}</span>
+                    @endif
+                </div>
             </div>
             <div class="pb-4">
             <span class="mb-2 text-md">Confirm Password</span>
@@ -63,16 +67,18 @@
                 name="password_confirmation"
                 id="password"
                 class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"/>
-                @if ($errors->has('password'))
-                   <span>{{ $errors->first('password') }}</span>
-                @endif
+                <div class="text-sm text-red-500">
+                    @if ($errors->has('password'))
+                    <span>{{ $errors->first('password') }}</span>
+                    @endif
+                </div>
             </div>
-            <button type="submit" class="w-full bg-primary text-white p-2 rounded-lg mb-4  hover:opacity-90 hover:shadow-lg transition duration-500">
+            <button type="submit" class="w-full bg-[#780000] text-white p-2 rounded-lg mb-4  hover:opacity-90 hover:shadow-lg transition duration-500">
             Register
             </button>
             </form>
-            <button class="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 hover:bg-secondary hover:text-white">
-            <img src="./img/google.svg" alt="img" class="w-6 h-6 inline mr-2" />
+            <button class="gap-2  text-slate-700 hover:border-secondary hover:shadow transition duration-150 w-full border border-gray-300 text-md p-2 rounded-lg mb-6">
+            <img src="/img/google.svg" alt="img" class="w-6 h-6 inline mr-2" />
                 Register with Google
             </button>
             <div class="text-center text-secondary">
