@@ -10,7 +10,7 @@
     <div class="p-2 border-2 border-gray-200 border-dashed rounded-lg">
       <section id="hitung">
       <div class="grid grid-cols-4 gap-4 mb-4">
-         <div class="w-3/5 mx-auto my-16 lg:w-full">
+         <div class="w-3/5 mx-auto my-4 lg:w-full">
             <div class="block max-w-sm mb-5 bg-[#EDF2F4] border text-center border-gray-200 rounded-lg shadow hover:bg-gray-100">
                 <div class="flex items-center justify-center">
                     <div class="flex items-center justify-center m-4 mb-10 rounded-full bg-primary h-[65px] w-[65px]">
@@ -24,7 +24,7 @@
                     <h5 class="mb-12 text-lg text-center font-semibold tracking-tight text-secondary ">Antrian</h5>
             </div>
         </div>
-        <div class="w-3/5 mx-auto my-16 lg:w-full">
+        <div class="w-3/5 mx-auto my-4 lg:w-full">
             <div class="block max-w-sm mb-5 bg-[#EDF2F4] border text-center border-gray-200 rounded-lg shadow hover:bg-gray-100">
                 <div class="flex items-center justify-center">
                     <div class="flex items-center justify-center m-4 mb-10 rounded-full bg-primary h-[65px] w-[65px]">
@@ -37,7 +37,7 @@
                 <h5 class="mb-12 text-lg text-center font-semibold  tracking-tight text-secondary ">Pasien</h5>
             </div>
         </div>
-        <div class="w-3/5 mx-auto my-16 lg:w-full">
+        <div class="w-3/5 mx-auto my-4 lg:w-full">
             <div class="block max-w-sm mb-5 bg-[#EDF2F4] border text-center border-gray-200 rounded-lg shadow hover:bg-gray-100">
                 <div class="flex items-center justify-center">
                     <div class="flex items-center justify-center m-4 mb-10 rounded-full bg-primary h-[65px] w-[65px]">
@@ -50,7 +50,7 @@
                 <h5 class="mb-12 text-lg text-center font-semibold tracking-tight text-secondary ">Dokter</h5>
             </div>
         </div>
-        <div class="w-3/5 mx-auto my-16 lg:w-full">
+        <div class="w-3/5 mx-auto my-4 lg:w-full">
             <div class="block max-w-sm mb-5 bg-[#EDF2F4] border text-center border-gray-200 rounded-lg shadow hover:bg-gray-100">
                 <div class="flex items-center justify-center">
                     <div class="flex items-center justify-center m-4 mb-10 rounded-full bg-primary h-[65px] w-[65px]">
