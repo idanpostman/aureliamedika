@@ -9,6 +9,7 @@ use App\Http\Controllers\DashboardPasienController;
 use App\Http\Controllers\DashboardAntrianGigiController;
 use App\Http\Controllers\DashboardAntrianUmumController;
 use App\Http\Controllers\DashboardAntrianThtController;
+use App\Http\Controllers\DashboardDokterController;
 use App\Http\Controllers\GoogleController;
 use Laravel\Socialite\Facades\Socialite;
 
