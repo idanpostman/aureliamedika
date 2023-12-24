@@ -23,7 +23,7 @@
                </button>
                <ul id="dropdown-example" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="#" class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group dark:text-white hover:bg-[#003049] active:bg-[#003049]"">Poli Umum</a>
+                     <a href="/dashboard/antrian-poli-umum" class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group dark:text-white hover:bg-[#003049] active:bg-[#003049]"">Poli Umum</a>
                   </li>
                   <li>
                      <a href="/dashboard/antrian-poli-gigi" class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group dark:text-white hover:bg-[#003049] active:bg-[#003049]">Poli Gigi</a>
