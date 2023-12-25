@@ -20,7 +20,7 @@ class DashboardPasienController extends Controller
      */
     public function create()
     {
-        //
+        return  view('dashboard.pasien.create');
     }
 
     /**
