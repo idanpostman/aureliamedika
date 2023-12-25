@@ -6,6 +6,10 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardPasienController;
+use App\Http\Controllers\DashboardAntrianGigiController;
+use App\Http\Controllers\DashboardAntrianUmumController;
+use App\Http\Controllers\DashboardAntrianThtController;
+use App\Http\Controllers\DashboardDokterController;
 use App\Http\Controllers\GoogleController;
 use Laravel\Socialite\Facades\Socialite;
 
@@ -51,4 +55,8 @@ Route::get('/logout', [LoginController::class, 'logout']);
 Route::middleware(['auth'])->group(function() {
     Route::get('/dashboard', [DashboardController::class,'index'])->middleware('userAkses:admin');
     Route::resource('/dashboard/pasien', DashboardPasienController::class)->middleware('userAkses:admin');
+    Route::resource('/dashboard/antrian-poli-gigi', DashboardAntrianGigiController::class)->middleware('userAkses:admin');
+    Route::resource('/dashboard/antrian-poli-umum', DashboardAntrianUmumController::class)->middleware('userAkses:admin');
+    Route::resource('/dashboard/antrian-poli-tht', DashboardAntrianThtController::class)->middleware('userAkses:admin');
+    Route::resource('/dashboard/dokter', DashboardDokterController::class)->middleware('userAkses:admin');
 });
