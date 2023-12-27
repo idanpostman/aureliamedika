@@ -65,4 +65,5 @@ Route::middleware(['auth'])->group(function() {
     Route::resource('/dashboard/antrian-poli-umum', DashboardAntrianUmumController::class)->middleware('userAkses:admin');
     Route::resource('/dashboard/antrian-poli-tht', DashboardAntrianThtController::class)->middleware('userAkses:admin');
     Route::resource('/dashboard/dokter', DashboardDokterController::class)->middleware('userAkses:admin');
+    Route::get('/dashboard/cetakdokter', [DashboardDokterController::class,'cetakDokter'])->middleware('userAkses:admin');
 });
