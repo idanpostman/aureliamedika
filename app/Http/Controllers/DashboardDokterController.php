@@ -19,6 +19,14 @@ class DashboardDokterController extends Controller
         ]);
     }
 
+    public function cetakDokter()
+    {
+        return view('dashboard.dokter.cetakdokter', [
+            'dokters' => Dokter::get()
+        ]);
+    }
+
+
     /**
      * Show the form for creating a new resource.
      */
