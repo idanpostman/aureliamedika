@@ -1,17 +1,19 @@
 <?php
 
-use App\Http\Controllers\Auth\ProviderController;
+use App\Models\Poli;
+use App\Models\Dokter;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardController;
+use Laravel\Socialite\Facades\Socialite;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Auth\ProviderController;
+use App\Http\Controllers\DashboardDokterController;
 use App\Http\Controllers\DashboardPasienController;
+use App\Http\Controllers\DashboardAntrianThtController;
 use App\Http\Controllers\DashboardAntrianGigiController;
 use App\Http\Controllers\DashboardAntrianUmumController;
-use App\Http\Controllers\DashboardAntrianThtController;
-use App\Http\Controllers\DashboardDokterController;
-use App\Http\Controllers\GoogleController;
-use Laravel\Socialite\Facades\Socialite;
 
 
 
@@ -27,7 +29,11 @@ use Laravel\Socialite\Facades\Socialite;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index', [
+        "dokters" => Dokter::all(),
+        "polis" => Poli::all()
+    ]);
+
 });
 
 Route::get('/antrian', function () {
