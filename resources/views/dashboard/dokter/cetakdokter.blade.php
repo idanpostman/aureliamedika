@@ -1,13 +1,12 @@
 <!DUCTYPE html>
 <html lang="en">
-    
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="Width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content ="ie= edge">
         <meta name ="scrf-token" content ="{{ csrf_token() }}">
-        <style?
+        <style>
             table.static {
                 position: relative;
                 /* left: 3% */

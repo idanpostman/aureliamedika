@@ -10,8 +10,8 @@
                         <h2 class="font-medium text-secondary text-lg mb-5 lg:text-4xl">di
                            <span class="text-secondary font-bold">Aurelia Medika</span>
                         </h2>
-                        <p class="font-medium text-secondary mb-7 leading-relaxed">Lorem ipsum dolor sit amet consectetur.
-                            <span class="text-secondary font-bold">Ambil Antrian!</span>
+                        <p class="font-medium text-secondary mb-7 leading-relaxed"> Kesehatan <span class = "text-secondary font-bold" >Anda, </span> Prioritas Utama <span class = "text-secondary font-bold" > Kami </span>
+                            <!-- <span class="text-secondary font-bold">Ambil Antrian!</span> -->
                         </p>
                         <a href="/antrian">
                             <button class="text-base font-medium uppercase text-white bg-primary py-3 px-5 rounded-full  hover:opacity-80 hover:shadow-lg transition duration-500 ">Ambil Antrian</button>
@@ -31,7 +31,7 @@
                     <div class="w-full flex items-stretch lg:mr-5">
                         <div class="max-w-sm mx-auto mb-6 p-6 bg-primary border border-gray-200 rounded-lg shadow ">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Sistem Antrian Online!</h5>
-                            <p class="mb-3 font-normal text-white">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore laboriosam natus minus quia! Aut, modi repudiandae perferendis aspernatur velit debitis.</p>
+                            <p class= " text-left mb-3 font-normal text-white"> Kami mengerti betapa berharganya waktu Anda. Dengan sistem antrian online kami, kami hadir untuk memberikan kemudahan dan kenyamanan dalam proses pendaftaran kunjungan ke klinik.</p>
                             <button class="w-full text-base font-medium uppercase text-white  bg-white bg-opacity-25 items-center py-3 px-5  rounded-full  hover:bg-opacity-30 hover:shadow-lg transition duration-500 ">Ambil Antrian</button>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                                 </svg>
                             </div>
                             <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 ">{{ $poli->nama_poli }}</h5>
-                        <p class="mb-3 font-normal text-center text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, omnis minus? Soluta facere fugiat unde. Perspiciatis veniam sint odit aut?</p>
+                        <p class="mb-3 font-normal text-center text-gray-700">{{ $poli->deskripsi }}</p>
                         </div>
                    </div>
                    @endforeach
@@ -125,7 +125,10 @@
                         <h4 class="font-bold uppercase text-primary mt-[-50px]  mb-2 text-4xl lg:mt-0">About us</h4>
                         <p class="font-normal text-base text-secondary max-w-xl lg:text-lg">
                             <span class="font-semibold text-secondary text-xl max-w-md lg:text-2xl"> Aurelia Medika</span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque debitis earum! Repellendus nisi recusandae quia dolores quam. Deserunt voluptas ipsum voluptatum nihil ducimus natus inventore dolores placeat accusantium nulla hic maiores, libero atque autem repudiandae enim quaerat adipisci amet reiciendis ipsa eum. Voluptates provident ipsum, aliquam repudiandae quo recusandae obcaecati, expedita dolorem blanditiis labore debitis earum sed. Dicta deserunt maiores obcaecati aliquid earum sit vero, sint, dolores repellendus nisi nostrum. Dolorem eius, maiores tenetur optio suscipit dolor accusantium reiciendis tempora a, nihil odit. Veritatis reiciendis, laboriosam accusantium eligendi itaque, facilis iusto a aspernatur sapiente tenetur libero saepe quaerat nesciunt?
+                            Memahami pentingnya kesehatan bagi kehidupan Anda. Dengan tim medis berpengalaman dan berdedikasi, kami berkomitmen untuk memberikan pelayanan kesehatan yang terbaik bagi setiap pasien.
+                            Di Klinik Aurelia Medika, kenyamanan dan keamanan pasien adalah prioritas utama kami. Kami berkomitmen untuk menciptakan lingkungan yang ramah, hangat, dan mendukung dalam setiap kunjungan Anda.
+                            Mari bergabung dengan kami dalam meraih kesehatan optimal. Kunjungi Klinik Aurelia Medika dan temukan layanan kesehatan yang terpercaya dan terbaik untuk Anda dan keluarga.
+
                         </p>
                     </div>
                 </div>
