@@ -18,10 +18,10 @@
                             <a href="#home" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Home</a>
                         </li>
                         <li class="group">
-                            <a href="#aboutus" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">About us</a>
+                            <a href="#about" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">About us</a>
                         </li>
                         <li class="group">
-                            <a href="#ourdoctor" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Our Doctor</a>
+                            <a href="#doctor" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Our Doctor</a>
                         </li>
                         <li class="group">
                             <a href="#contact" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Contact</a>

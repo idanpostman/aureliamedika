@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-        <!-- Hero Section Start -->
+        <!-- Home Section Start -->
         <section id="home" class="h-[550px] mt-[85px] bg-center bg-no-repeat bg-blend-multiply bg-cover pt-36" style="background-image: url('/img/bg-home3.jpeg')">
             <div class="container mx-auto">
                 <div class="flex flex-wrap">
@@ -21,10 +21,11 @@
             </div>
         </section>
 
-        <!-- Hero Section End -->
+        <!-- Home Section End -->
+         
+        <!-- Poli start  -->
 
-        {{-- Poli Start --}}
-         <section id="poli" class="pb-8">
+         <section id="poli" class="pb-8" >
                 <div class="container mx-auto ">
                 <div class="-translate-y-28 px-16 gap-3 lg:flex">
                     <div class="w-full flex items-stretch lg:mr-5">
@@ -49,9 +50,9 @@
                    @endforeach
                 </div>
           </section>
-        {{-- Poli End --}}
+        <!-- {{-- Poli End --}} -->
 
-        {{-- Hitung start --}}
+        <!-- {{-- Hitung start --}} -->
         <section id="hitung" class=" pt-8 pb-4 bg-white">
             <div class="container mx-auto items-center lg:px-16 lg:flex ">
                 <div class="w-3/5 mx-auto my-16 lg:w-full">
@@ -109,10 +110,10 @@
                 </div>
             </div>
         </section>
-        {{-- Hitung End --}}
+        <!-- {{-- Hitung End --}} -->
 
             <!-- About Section Start -->
-        <section id="about" class="pt-8 pb-12">
+        <section id="about" class="pt-36">
             <div class="container mx-auto">
                 <div class="flex flex-wrap lg:grid lg:grid-cols-2">
                     <div class="w-full px-16">
@@ -133,9 +134,9 @@
     <!-- About section End -->
 
 
-    {{-- Our Doctor start --}}
+    <!-- {{-- Our Doctor start --}} -->
 
-    <section id="doctor" class="pt-16 pb-32 bg-white">
+    <section id="doctor" class="pt-36 bg-white">
         <div class="container mx-auto">
             <div class="max-w-xl mx-auto text-center mb-16">
                 <h2 class="font-bold text-primary text-3xl lg:text-5xl">Our Doctor</h2>
@@ -181,17 +182,18 @@
             </div>
         </div>
   </section>
-    {{-- Our Doctor End --}}
+    <!-- {{-- Our Doctor End --}} -->
 
-    {{-- Contact Start --}}
+    <!-- {{-- Contact Start --}} -->
 
-    <section id="contact" class="pt-16 pb-32">
+    <section id="contact" class="pt-36 pb-32">
         <div class="container mx-auto">
             <div class="max-w-xl mx-auto text-center">
                 <h2 class="font-bold text-primary text-3xl mb-16 lg:text-5xl">Contact</h2>
             </div>
             <div class="flex flex-wrap">
-                 {{-- Lokasi --}}
+
+                 <!-- {{-- Lokasi --}} -->
                 <div class="w-full lg:w-1/2">
                     <div class="flex flex-wrap px-4 py-4 lg:px-16">
                         <div class="flex items-center justify-center rounded-full bg-primary h-[45px] w-[45px]">
@@ -204,8 +206,8 @@
                             <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Jl. Raya Kopo No.16, Kota Bandung, Jawa Barat 40233</p>
                         </div>
                     </div>
-                    {{-- Lokasi End --}}
-                    {{-- Email Start --}}
+                    <!-- {{-- Lokasi End --}} -->
+                    <!-- {{-- Email Start --}} -->
                     <div class="flex flex-wrap px-4 py-4 lg:px-16">
                         <div class="flex items-center justify-center rounded-full bg-primary h-[45px] w-[45px]">
                             <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
@@ -217,8 +219,8 @@
                             <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">aureliamedika@example.org</p>
                         </div>
                     </div>
-                    {{-- Email End --}}
-                    {{-- Phone Start --}}
+                    <!-- {{-- Email End --}} -->
+                    <!-- {{-- Phone Start --}} -->
                     <div class="flex flex-wrap px-4 py-4 lg:px-16">
                         <div class="flex items-center justify-center rounded-full bg-primary h-[45px] w-[45px]">
                             <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
@@ -231,7 +233,7 @@
                         </div>
                     </div>
                 </div>
-            {{-- Phone End --}}
+            <!-- {{-- Phone End --}} -->
                     <form action="">
                         <div class="flex flex-wrap w-full items-center justify-center lg:w-[620px]">
                             <div class="w-full px-4 mb-8">
@@ -256,7 +258,7 @@
                 </div>
             </div>
     </section>
-    {{-- Contact End --}}
+    <!-- {{-- Contact End --}} -->
 
 
 
