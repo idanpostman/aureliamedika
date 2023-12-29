@@ -11,7 +11,7 @@
             <div class="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0">
                 <!-- left side -->
                 <div class="flex flex-col justify-center p-8 md:p-14">
-                    <span class="mb-3 text-center text-lg font-bold">Register</span>
+                    <span class="mb-3 text-center text-lg font-bold">Daftar Ke Aurelia Medika</span>
 
                     <form action="/register" method="post">
                         @csrf
@@ -67,17 +67,20 @@
                             </div>
                         </div>
                         <button class="w-full bg-primary text-white p-2 rounded-lg mb-4  hover:opacity-90 hover:shadow-lg transition duration-500">
-                            Register
+                            Daftar
                         </button>
+                        <div class="text-center text-xs mb-4 text-slate-500">
+                    <p>ATAU</p>
+                </div>
                     </form>
                     <button onclick="window.location.href='{{ route('google.login') }}'" class="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 hover:bg-secondary hover:text-white">
                         <img src="./img/google.svg" alt="img" class="w-6 h-6 inline mr-2" />
-                        Register with Google
+                        Daftar Dengan Google
                     </button>
                     <div class="text-center text-secondary">
-                        Already have an account?
+                        Sudah Memiliki Akun?
                         <a href="/login">
-                            <span class="font-bold text-primary hover:text-secondary">Login</span>
+                            <span class="font-bold text-primary hover:text-secondary">Masuk!</span>
                         </a>
                     </div>
                 </div>
