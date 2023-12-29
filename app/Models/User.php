@@ -43,4 +43,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    public function Admin()
+{
+    return $this->role === 'admin'; // Sesuaikan ini dengan struktur peran pengguna Anda
+}
 }
