@@ -49,9 +49,7 @@
                 </div>
                 @endif
 
-
-
-                <span class="mb-3 text-center text-lg font-bold">Login To Aurelia Medika</span>
+                <span class="mb-3 text-center text-lg font-bold">Login Ke Aurelia Medika</span>
                 <form action="/login" method="post">
                 @csrf
                 <div class="pt-4">
@@ -85,21 +83,21 @@
                 <button
                 class="w-full bg-primary text-white p-2 rounded-lg mb-4  hover:opacity-90 hover:shadow-lg transition duration-500"
                 >
-                Login
+                Masuk
                 </button>
                 <div class="text-center text-xs mb-4 text-slate-500">
-                    <p>OR</p>
+                    <p>ATAU</p>
                 </div>
             </form>
                 <a onclick="window.location.href='{{ route('google.login') }}'">
                     <button class="gap-2  text-slate-700 hover:border-secondary hover:shadow transition duration-150 w-full border border-gray-300 text-md p-2 rounded-lg mb-6">
-                    <img src="./img/google.svg" alt="img" class="w-6 h-6 inline mr-2" /> Login with Google
+                    <img src="./img/google.svg" alt="img" class="w-6 h-6 inline mr-2" /> Masuk Dengan Google
                     </button>
                 </a>
                 <div class="text-center text-secondary">
-                Dont have an account?
+                Tidak Memiliki Akun?
                 <a href="/register">
-                    <span class="font-bold text-primary hover:text-secondary">Register</span>
+                    <span class="font-bold text-primary hover:text-secondary">Daftar!</span>
                 </a>
                 </div>
             </div>

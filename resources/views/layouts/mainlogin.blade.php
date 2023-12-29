@@ -23,7 +23,7 @@
 
         @yield('container')
 
-    @include('partials.footer')
+    @include('partials.footer1')
 
 
 
