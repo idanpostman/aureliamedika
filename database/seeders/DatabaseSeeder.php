@@ -39,17 +39,17 @@ class DatabaseSeeder extends Seeder
 
             Poli::create([
                 'nama_poli' => 'Poli Umum',
-                'deskripsi' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. awokawokawokawowaoawkkoawokawokawkoawkoawkoawkoawko'
+                'deskripsi' => 'Poli Umum kami adalah jantung dari pelayanan kesehatan yang menyediakan perawatan yang komprehensif dan beragam untuk berbagai kondisi medis. Dengan staf medis yang berpengalaman dan peralatan terkini, kami siap memberikan solusi bagi setiap keluhan kesehatan Anda.'
             ]);
 
             Poli::create([
                 'nama_poli' => 'Poli Gigi',
-                'deskripsi' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. awokawokawokawowaoawkkoawokawokawkoawkoawkoawkoawko'
+                'deskripsi' => 'Poli Gigi kami mengutamakan kesehatan mulut Anda dengan pelayanan yang komprehensif dan perawatan yang penuh perhatian. Kami memahami pentingnya kesehatan gigi dan mulut dalam kesejahteraan keseluruhan'
             ]);
 
             Poli::create([
                 'nama_poli' => 'Poli THT',
-                'deskripsi' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. awokawokawokawowaoawkkoawokawokawkoawkoawkoawkoawko'
+                'deskripsi' => 'Poli THT (Telinga, Hidung, Tenggorokan) kami hadir untuk memberikan perawatan komprehensif bagi masalah terkait THT. Kami mengerti betapa pentingnya kesehatan bagian ini dalam kehidupan sehari-hari'
             ]);
 
     }
