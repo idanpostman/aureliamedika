@@ -18,7 +18,7 @@
                     <div class="absolute inset-y-0 left-0 rtl:inset-r-0 rtl:right-0 flex items-center ps-3 pointer-events-none">
                         <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                     </div>
-                    <input type="text"  name="search" id="search" class=" form-control block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 " placeholder="Cari dokter">
+                    <input type="text" id="table-search" class="block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 " placeholder="Cari dokter">
                 </div>
 
                 <!-- Button Tambah Dokter -->
@@ -65,6 +65,7 @@
                 </div>
             </div>
         </caption>
+
         <table class="w-full text-sm text-left rtl:text-right text-gray-500">
             <thead class="text-xs text-gray-700 uppercase bg-gray-100 "><tr>
                 <th scope="col" class="px-6 py-3">
@@ -84,8 +85,8 @@
                     <span class="sr-only pr-10"></span>
                 </th>
             </tr>
-        </thead>   
-        <tbody id="search_list">
+        </thead>
+        <tbody>
             @foreach ($dokters as $dokter)
             <tr class="bg-white border-b ">
 
@@ -130,26 +131,8 @@
         </tbody>
     </table>
 </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-        <script>
-            $(document).ready(function(){
-             $('#search').on('keyup',function(){
-                 var query= $(this).val();
-                 $.ajax({
-                    url:"search",
-                    type:"GET",
-                    data:{'search':query},
-                    success:function(data){
-                        $('#search_list').html(data);
-                    }
-             });
-             //end of ajax call
-            });
-            });
-        </script>
+
 
 @endsection
 
