@@ -1,19 +1,23 @@
 <?php
 
-use App\Models\Poli;
+use App\Http\Controllers\Auth\ProviderController;
+use App\Http\Controllers\DashboardAntrianGigiController;
+use App\Http\Controllers\DashboardAntrianThtController;
+use App\Http\Controllers\DashboardAntrianUmumController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashboardDokterController;
+use App\Http\Controllers\DashboardObatController;
+use App\Http\Controllers\DashboardPasienController;
+use App\Http\Controllers\DashboardRekamMedisController;
+use App\Http\Controllers\GoogleController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use App\Models\Dokter;
+use App\Models\Poli;
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\GoogleController;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\Auth\ProviderController;
-use App\Http\Controllers\DashboardDokterController;
-use App\Http\Controllers\DashboardPasienController;
-use App\Http\Controllers\DashboardAntrianThtController;
-use App\Http\Controllers\DashboardAntrianGigiController;
-use App\Http\Controllers\DashboardAntrianUmumController;
+
+
 
 
 
@@ -60,6 +64,8 @@ Route::get('/logout', [LoginController::class, 'logout']);
 
 Route::middleware(['auth'])->group(function() {
     Route::get('/dashboard', [DashboardController::class,'index'])->middleware('userAkses:admin');
+    Route::get('/dashboard/obat', [DashboardObatController::class,'index'])->middleware('userAkses:admin');
+    Route::get('/dashboard/rekam-medis', [DashboardRekamMedisController::class,'index'])->middleware('userAkses:admin');
     Route::resource('/dashboard/pasien', DashboardPasienController::class)->middleware('userAkses:admin');
     Route::resource('/dashboard/antrian-poli-gigi', DashboardAntrianGigiController::class)->middleware('userAkses:admin');
     Route::resource('/dashboard/antrian-poli-umum', DashboardAntrianUmumController::class)->middleware('userAkses:admin');
