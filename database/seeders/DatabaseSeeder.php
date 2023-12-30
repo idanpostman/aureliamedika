@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use App\Models\Poli;
+use App\Models\Dokter;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -52,5 +53,24 @@ class DatabaseSeeder extends Seeder
                 'deskripsi' => 'Poli THT (Telinga, Hidung, Tenggorokan) kami hadir untuk memberikan perawatan komprehensif bagi masalah terkait THT. Kami mengerti betapa pentingnya kesehatan bagian ini dalam kehidupan sehari-hari'
             ]);
 
+            Dokter::create([
+                'nama_dokter' => 'dr. Ahmad',
+                'poli_id' => '1'
+            ]);
+
+            Dokter::create([
+                'nama_dokter' => 'drg. Alif',
+                'poli_id' => '2'
+            ]);
+
+            Dokter::create([
+                'nama_dokter' => 'Wildan Fauzan ST.',
+                'poli_id' => '3'
+            ]);
+
+            Dokter::create([
+                'nama_dokter' => 'dr. Diva',
+                'poli_id' => '1'
+            ]);
     }
 }

@@ -32,7 +32,9 @@
                         <div class="max-w-sm mx-auto mb-6 p-6 bg-primary border border-gray-200 rounded-lg shadow ">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Sistem Antrian Online!</h5>
                             <p class= " text-left mb-3 font-normal text-white"> Kami mengerti betapa berharganya waktu Anda. Dengan sistem antrian online kami, kami hadir untuk memberikan kemudahan dan kenyamanan dalam proses pendaftaran kunjungan ke klinik.</p>
+                            <a href="/antrian">
                             <button class="w-full text-base font-medium uppercase text-white  bg-white bg-opacity-25 items-center py-3 px-5  rounded-full  hover:bg-opacity-30 hover:shadow-lg transition duration-500 ">Ambil Antrian</button>
+                            </a>
                         </div>
                     </div>
                     
@@ -138,7 +140,7 @@
         <!-- {{-- Hitung End --}} -->
 
             <!-- About Section Start -->
-        <section id="about" class="pt-36">
+        <section id="about" class="pt-36 pb-16">
             <div class="container mx-auto">
                 <div class="flex flex-wrap lg:grid lg:grid-cols-2">
                     <div class="w-full px-16">
@@ -164,7 +166,7 @@
 
     <!-- {{-- Our Doctor start --}} -->
 
-    <section id="doctor" class="pt-36 bg-white">
+    <section id="doctor" class="pt-36 pb-16 bg-white">
         <div class="container mx-auto">
             <div class="max-w-xl mx-auto text-center mb-16">
                 <h2 class="font-bold text-primary text-3xl lg:text-5xl">Our Doctor</h2>

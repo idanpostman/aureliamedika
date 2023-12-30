@@ -29,7 +29,7 @@ let cards = slider.getElementsByTagName('li');
 
 let elementsToShow = 3;
 
-if (document.body.clientWidth < 1000) {
+if (document.body.clientWidth < 900) {
     elementsToShow =1;
 } else if (document.body.clientWidth < 1300) {
     elementsToShow = 2;
