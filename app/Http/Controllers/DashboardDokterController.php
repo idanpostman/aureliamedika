@@ -128,12 +128,13 @@ class DashboardDokterController extends Controller
     
     
             $output='';
+            $counter = 1;
         if(count($data)>0){
                 foreach ($data as $row) {
                     $output .= '
                         <tr class="bg-white border-b">
                             <td scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                ' . $row->id . '
+                            ' . $counter++ . '
                             </td>
                             <td scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
                                 ' . ($row->image ? '<img class="w-10 h-10 rounded-full" src="' . asset('storage/' . $row->image) . '" alt="dokter">' : '<img class="w-10 h-10 rounded-full" src="/img/user-photo.png">') . '
