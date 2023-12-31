@@ -47,4 +47,8 @@ class User extends Authenticatable
 {
     return $this->role === 'admin'; // Sesuaikan ini dengan struktur peran pengguna Anda
 }
+public function antrians()
+{
+    return $this->hasMany(Antrian::class);
+}
 }
