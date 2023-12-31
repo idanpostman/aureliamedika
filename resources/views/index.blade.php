@@ -118,7 +118,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter  text-4xl font-bold"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter  text-4xl font-bold"></span>
                         <h5 class="mb-12 text-lg text-center font-semibold tracking-tight text-secondary ">Dokter</h5>
                     </div>
                 </div>
@@ -324,26 +324,26 @@
 
     <script>
         // Form Contact
-  const scriptURL = 'https://script.google.com/macros/s/AKfycby_vYb4XWvk1_k98ggqmm5WMSgsZd9HjCEBo7-jrKZVC2BrhQVdyuadGdtFcolBXMbe_Q/exec'
-  const form = document.forms['aureliamedika-contact-form']
-  const btnLoading = document.querySelector('.btn-loading');
-  const btnKirim = document.querySelector('.btn-kirim');
-  const myAlert = document.querySelector('.my-alert');
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby_vYb4XWvk1_k98ggqmm5WMSgsZd9HjCEBo7-jrKZVC2BrhQVdyuadGdtFcolBXMbe_Q/exec'
+        const form = document.forms['aureliamedika-contact-form']
+        const btnLoading = document.querySelector('.btn-loading');
+        const btnKirim = document.querySelector('.btn-kirim');
+        const myAlert = document.querySelector('.my-alert');
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    btnLoading.classList.toggle('hidden');
-    btnKirim.classList.toggle('hidden');
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        btnLoading.classList.toggle('hidden');
-        btnKirim.classList.toggle('hidden');
-        myAlert.classList.toggle('hidden');
-        form.reset();
-        console.log('Success!', response);
-    })
-      .catch(error => console.error('Error!', error.message))
-  })
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            btnLoading.classList.toggle('hidden');
+            btnKirim.classList.toggle('hidden');
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                btnLoading.classList.toggle('hidden');
+                btnKirim.classList.toggle('hidden');
+                myAlert.classList.toggle('hidden');
+                form.reset();
+                console.log('Success!', response);
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
     </script>
 
 
