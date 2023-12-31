@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AntrianController;
 use App\Http\Controllers\Auth\ProviderController;
 use App\Http\Controllers\DashboardAntrianGigiController;
 use App\Http\Controllers\DashboardAntrianThtController;
@@ -16,6 +17,7 @@ use App\Models\Dokter;
 use App\Models\Poli;
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
+
 
 
 
@@ -39,15 +41,10 @@ Route::get('/', function () {
     ]);
 
 });
-
-Route::get('/antrian', function () {
-    return view('antrian');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
-
+Route::get('/antrian', [AntrianController::class, 'index']);
+Route::post('/submit-antrian', [AntrianController::class, 'submitAntrian'])->name('antrian.submit');
+Route::get('/get-antrian', [AntrianController::class, 'getAntrian']);
+Route::get('/generate-pdf', [AntrianController::class, 'generatePDF']);
 
 Route::middleware(['guest'])->group(function(){
     Route::get('/login', [LoginController::class, 'index']);
@@ -73,8 +70,15 @@ Route::middleware(['auth'])->group(function() {
     Route::resource('/dashboard/pasien', DashboardPasienController::class)->middleware('userAkses:admin');
     Route::resource('/dashboard/antrian-poli-gigi', DashboardAntrianGigiController::class)->middleware('userAkses:admin');
     Route::resource('/dashboard/antrian-poli-umum', DashboardAntrianUmumController::class)->middleware('userAkses:admin');
+    Route::post('/dashboard/antrian-poli-umum', [AntrianController::class, 'storepu'])->name('antrian.store');
     Route::resource('/dashboard/antrian-poli-tht', DashboardAntrianThtController::class)->middleware('userAkses:admin');
     Route::resource('/dashboard/dokter', DashboardDokterController::class)->middleware('userAkses:admin');
     Route::get('/dashboard/cetakdokter', [DashboardDokterController::class,'cetakDokter'])->middleware('userAkses:admin');
     Route::get('/dashboard/search', [DashboardDokterController::class,'search'])->middleware('userAkses:admin');
+    Route::get('/dashboard/antrian/create', [AntrianController::class, 'create'])->name('antrian.create');
+    Route::get('/dashboard/antrian/move-to-rekam-medis/{antrianId}', [AntrianController::class, 'moveDataToRekamMedis']);
+    Route::delete('/dashboard/antrian-poli-umum/{antrian}', 'AntrianController@destroy')->name('antrian.destroy');
+    Route::delete('/dashboard/antrian-poli-gigi/{antrian}', 'AntrianController@destroy')->name('antrian.destroy');
+    Route::delete('/dashboard/antrian-poli-tht/{antrian}', 'AntrianController@destroy')->name('antrian.destroy');
+    Route::get('/rekam-medis/{id}/edit', [DashboardRekamMedisController::class, 'edit'])->name('rekam-medis.edit');
 });
