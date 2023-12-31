@@ -26,19 +26,19 @@
             </ul>
         </div>
         <div class="w-full mb-12 md:w-1/4 lg:px-16">
-            <h3 class="font-semibold text-xl text-white mb-5">Link</h3>
+            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
             <ul class="text-slate-300">
                 <li>
-                    <a href="/#home" class="inline-block text-base hover:text-primary mb-3">Home</a>
+                    <a href="/#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
                 </li>
                 <li>
-                    <a href="/#about" class="inline-block text-base hover:text-primary mb-3">About Us</a>
+                    <a href="/#about" class="inline-block text-base hover:text-primary mb-3">Tentang Kami</a>
                 </li>
                 <li>
-                    <a href="/#doctor" class="inline-block text-base hover:text-primary mb-3">Our Doctor</a>
+                    <a href="/#doctor" class="inline-block text-base hover:text-primary mb-3">Dokter</a>
                 </li>
                 <li>
-                    <a href="/#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
+                    <a href="/#contact" class="inline-block text-base hover:text-primary mb-3">Kontak</a>
                 </li>
             </ul>
         </div>

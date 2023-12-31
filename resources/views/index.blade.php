@@ -149,7 +149,7 @@
                         <img src="/img/doctors-about-us1.jpg" class="w-[250px] h-[150px] rounded-2xl -translate-y-32 translate-x-36 shadow-2xl lg:w-[300px] lg:h-[200px] lg:-translate-y-36 lg:translate-x-60 "  alt="">
                     </div>
                     <div class="w-full px-16 ">
-                        <h4 class="font-bold uppercase text-primary mt-[-50px]  mb-2 text-4xl lg:mt-0">About us</h4>
+                        <h4 class="font-bold uppercase text-primary mt-[-50px]  mb-2 text-4xl lg:mt-0">Tentang Kami</h4>
                         <p class="font-normal text-base text-secondary max-w-xl lg:text-lg">
                             <span class="font-semibold text-secondary text-xl max-w-md lg:text-2xl"> Aurelia Medika</span>
                             Memahami pentingnya kesehatan bagi kehidupan Anda. Dengan tim medis berpengalaman dan berdedikasi, kami berkomitmen untuk memberikan pelayanan kesehatan yang terbaik bagi setiap pasien.
@@ -169,7 +169,7 @@
     <section id="doctor" class="pt-36 pb-16 bg-white">
         <div class="container mx-auto">
             <div class="max-w-xl mx-auto text-center mb-16">
-                <h2 class="font-bold text-primary text-3xl lg:text-5xl">Our Doctor</h2>
+                <h2 class="font-bold text-primary text-3xl lg:text-5xl">Dokter</h2>
             </div>
             <div class="flex">
                 <div class="w-2/12 flex items-center ">
@@ -219,7 +219,7 @@
     <section id="contact" class="pt-36 pb-32">
         <div class="container mx-auto">
             <div class="max-w-xl mx-auto text-center">
-                <h2 class="font-bold text-primary text-3xl mb-16 lg:text-5xl">Contact</h2>
+                <h2 class="font-bold text-primary text-3xl mb-16 lg:text-5xl">Kontak</h2>
             </div>
             <div class="flex flex-wrap">
 
@@ -267,7 +267,7 @@
                     <form action="">
                         <div class="flex flex-wrap w-full items-center justify-center lg:w-[620px]">
                             <div class="w-full px-4 mb-8">
-                                    <label for="name" class="text-base font-bold text-primary">Name</label>
+                                    <label for="name" class="text-base font-bold text-primary">Nama</label>
                                     <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                                 </div>
                             <div class="w-full px-4 mb-8">
@@ -275,7 +275,7 @@
                                 <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                             </div>
                             <div class="w-full px-4 mb-8">
-                                <label for="message" class="text-base font-bold text-primary">Message</label>
+                                <label for="message" class="text-base font-bold text-primary">Pesan</label>
                                 <textarea type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
                             </div>
                             <div class="max-w-[250px] text-center mx-auto lg:w-full">

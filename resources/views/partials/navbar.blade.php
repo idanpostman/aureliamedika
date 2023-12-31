@@ -15,26 +15,26 @@
                 <nav id="nav-menu" class="hidden absolute py-5 bg-[#EDF2F4] shadow-lg rounded-lg max-w-[300px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none ">
                     <ul class="block lg:flex">
                         <li class="group">
-                            <a href="#home" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Home</a>
+                            <a href="#home" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Beranda</a>
                         </li>
                         <li class="group">
-                            <a href="#about" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">About us</a>
+                            <a href="#about" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Tentang Kami</a>
                         </li>
                         <li class="group">
-                            <a href="#doctor" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Our Doctor</a>
+                            <a href="#doctor" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Dokter</a>
                         </li>
                         <li class="group">
-                            <a href="#contact" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Contact</a>
+                            <a href="#contact" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Kontak</a>
                         </li>
                         @guest
                             <div class=" group my-4 mx-10 lg:my-0 lg:mx-4">
                                 <a href="/register">
-                                    <button class="text-base font-medium text-white bg-primary py-3 px-5 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500  ">Register</button>
+                                    <button class="text-base font-medium text-white bg-primary py-3 px-5 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500  ">Daftar</button>
                                 </a>
                             </div>
                             <div class="group mx-10 lg:mx-0">
                                 <a href="/login">
-                                    <button class="text-base font-medium text-white bg-secondary py-3 px-5 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 ">Login</button>
+                                    <button class="text-base font-medium text-white bg-secondary py-3 px-5 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 ">Masuk</button>
                                 </a>
                             </div>
                         @endguest
@@ -68,7 +68,7 @@
                 </li>
             @endif
             <li>
-                <a href="/logout" class="drop block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Log out</a>
+                <a href="/logout" class="drop block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Keluar</a>
             </li>
         </ul>
     </div>
