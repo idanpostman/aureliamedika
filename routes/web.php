@@ -70,15 +70,17 @@ Route::middleware(['auth'])->group(function() {
     Route::resource('/dashboard/pasien', DashboardPasienController::class)->middleware('userAkses:admin');
     Route::resource('/dashboard/antrian-poli-gigi', DashboardAntrianGigiController::class)->middleware('userAkses:admin');
     Route::resource('/dashboard/antrian-poli-umum', DashboardAntrianUmumController::class)->middleware('userAkses:admin');
-    Route::post('/dashboard/antrian-poli-umum', [AntrianController::class, 'storepu'])->name('antrian.store');
+    Route::post('/dashboard/antrian-poli-umum', [AntrianController::class, 'storepu'])->name('antrian.store')->middleware('userAkses:admin');
     Route::resource('/dashboard/antrian-poli-tht', DashboardAntrianThtController::class)->middleware('userAkses:admin');
     Route::resource('/dashboard/dokter', DashboardDokterController::class)->middleware('userAkses:admin');
     Route::get('/dashboard/cetakdokter', [DashboardDokterController::class,'cetakDokter'])->middleware('userAkses:admin');
     Route::get('/dashboard/search', [DashboardDokterController::class,'search'])->middleware('userAkses:admin');
-    Route::get('/dashboard/antrian/create', [AntrianController::class, 'create'])->name('antrian.create');
-    Route::get('/dashboard/antrian/move-to-rekam-medis/{antrianId}', [AntrianController::class, 'moveDataToRekamMedis']);
-    Route::delete('/dashboard/antrian-poli-umum/{antrian}', 'AntrianController@destroy')->name('antrian.destroy');
-    Route::delete('/dashboard/antrian-poli-gigi/{antrian}', 'AntrianController@destroy')->name('antrian.destroy');
-    Route::delete('/dashboard/antrian-poli-tht/{antrian}', 'AntrianController@destroy')->name('antrian.destroy');
-    Route::get('/rekam-medis/{id}/edit', [DashboardRekamMedisController::class, 'edit'])->name('rekam-medis.edit');
+    Route::get('/dashboard/antrian/create', [AntrianController::class, 'create'])->name('antrian.create')->middleware('userAkses:admin');
+    Route::get('/dashboard/antrian/move-to-rekam-medis/{antrianId}', [AntrianController::class, 'moveDataToRekamMedis'])->middleware('userAkses:admin');
+    Route::delete('/dashboard/antrian-poli-umum/{antrian}', 'AntrianController@destroy')->name('antrian.destroy')->middleware('userAkses:admin');
+    Route::delete('/dashboard/antrian-poli-gigi/{antrian}', 'AntrianController@destroy')->name('antrian.destroy')->middleware('userAkses:admin');
+    Route::delete('/dashboard/antrian-poli-tht/{antrian}', 'AntrianController@destroy')->name('antrian.destroy')->middleware('userAkses:admin');
+    Route::get('/rekam-medis/{id}/edit', [DashboardRekamMedisController::class, 'edit'])->name('rekam-medis.edit')->middleware('userAkses:admin');
+    Route::put('/rekam-medis/{id}', [DashboardRekamMedisController::class, 'update'])->name('rekam-medis.update')->middleware('userAkses:admin');
+
 });
