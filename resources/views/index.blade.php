@@ -155,8 +155,14 @@
                             Memahami pentingnya kesehatan bagi kehidupan Anda. Dengan tim medis berpengalaman dan berdedikasi, kami berkomitmen untuk memberikan pelayanan kesehatan yang terbaik bagi setiap pasien.
                             Di Klinik Aurelia Medika, kenyamanan dan keamanan pasien adalah prioritas utama kami. Kami berkomitmen untuk menciptakan lingkungan yang ramah, hangat, dan mendukung dalam setiap kunjungan Anda.
                             Mari bergabung dengan kami dalam meraih kesehatan optimal. Kunjungi Klinik Aurelia Medika dan temukan layanan kesehatan yang terpercaya dan terbaik untuk Anda dan keluarga.
-
                         </p>
+                        <div class="max-w-full mt-5 text-center lg:w-1/2">
+                            <div class="flex justify-center items-center">
+                                <a href="/about">
+                                    <button type="submit" class="text-base text-center font-semibold text-white bg-[#780000] py-3 px-8 rounded-lg w-full hover:opacity-80 hover:shadow-lg transition duration-500">Baca Selengkapnya</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -214,6 +220,7 @@
   </section>
     <!-- {{-- Our Doctor End --}} -->
 
+
     <!-- {{-- Contact Start --}} -->
 
     <section id="contact" class="pt-36 pb-32">
@@ -221,7 +228,7 @@
             <div class="max-w-xl mx-auto text-center">
                 <h2 class="font-bold text-primary text-3xl mb-16 lg:text-5xl">Kontak</h2>
             </div>
-            <div id="alert-1" class="my-alert hidden lg:w-1/2 mx-auto flex items-center p-4 mb-4 text-primary rounded-lg bg-blue-50" role="alert">
+            <div id="alert-1" class="my-alert hidden lg:w-1/2 mx-auto items-center p-4 mb-4 text-primary rounded-lg bg-blue-50" role="alert">
                 <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                 </svg>
@@ -299,7 +306,7 @@
                                     <button type="submit" class="btn-kirim text-base text-center font-semibold text-white bg-[#780000] py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
                                 </div>
                                 <div class="flex justify-center items-center">
-                                    <button type="submit" class="btn-loading hidden inline-flex text-base text-center font-semibold text-white bg-[#780000] py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
+                                    <button type="submit" class="btn-loading hidden text-base text-center font-semibold text-white bg-[#780000] py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
                                         <div role="status" class="text-center mx-auto">
                                             <svg aria-hidden="true" class="inline w-5 h-5  animate-spin fill-primary mr-2" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
