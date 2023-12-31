@@ -16,7 +16,7 @@
                     <form action="/register" method="post">
                         @csrf
                         <div class="py-4">
-                            <span class="mb-2 text-md">Name</span>
+                            <span class="mb-2 text-md">Nama</span>
                             <input
                                 type="text"
                                 class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                         <div class="pb-4">
-                            <span class="mb-2 text-md">Confirm Password</span>
+                            <span class="mb-2 text-md">Konfirmasi Password</span>
                             <input
                                 type="password"
                                 name="password_confirmation"
