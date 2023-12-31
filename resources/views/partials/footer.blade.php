@@ -15,13 +15,13 @@
             <h3 class="font-semibold text-xl text-white mb-5">Poli</h3>
             <ul class="text-slate-300">
                 <li>
-                    <a href="#poli" class="inline-block text-base hover:text-primary mb-3">Poli Umum</a>
+                    <a href="/#poli" class="inline-block text-base hover:text-primary mb-3">Poli Umum</a>
                 </li>
                 <li>
-                    <a href="#poli" class="inline-block text-base hover:text-primary mb-3">Poli Gigi</a>
+                    <a href="/#poli" class="inline-block text-base hover:text-primary mb-3">Poli Gigi</a>
                 </li>
                 <li>
-                    <a href="#poli" class="inline-block text-base hover:text-primary mb-3">Poli THT</a>
+                    <a href="/#poli" class="inline-block text-base hover:text-primary mb-3">Poli THT</a>
                 </li>
             </ul>
         </div>
@@ -29,16 +29,16 @@
             <h3 class="font-semibold text-xl text-white mb-5">Link</h3>
             <ul class="text-slate-300">
                 <li>
-                    <a href="#home" class="inline-block text-base hover:text-primary mb-3">Home</a>
+                    <a href="/#home" class="inline-block text-base hover:text-primary mb-3">Home</a>
                 </li>
                 <li>
-                    <a href="#about" class="inline-block text-base hover:text-primary mb-3">About Us</a>
+                    <a href="/#about" class="inline-block text-base hover:text-primary mb-3">About Us</a>
                 </li>
                 <li>
-                    <a href="#doctor" class="inline-block text-base hover:text-primary mb-3">Our Doctor</a>
+                    <a href="/#doctor" class="inline-block text-base hover:text-primary mb-3">Our Doctor</a>
                 </li>
                 <li>
-                    <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
+                    <a href="/#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
                 </li>
             </ul>
         </div>
