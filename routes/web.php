@@ -44,6 +44,10 @@ Route::get('/antrian', function () {
     return view('antrian');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
 
 Route::middleware(['guest'])->group(function(){
     Route::get('/login', [LoginController::class, 'index']);
