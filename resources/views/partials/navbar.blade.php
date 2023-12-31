@@ -2,7 +2,7 @@
     <div class="container mx-auto">
         <div class="flex items-center justify-between relative">
             <div class="px-6">
-                <a href="#home" class="block py-4 pl-2">
+                <a href="/#home" class="block py-4 pl-2">
                     <img class="w-[180px] lg:w-[220px]" src="/img/logo-merah.png"  alt="aureliamedika">
                 </a>
             </div>
@@ -15,16 +15,16 @@
                 <nav id="nav-menu" class="hidden absolute py-5 bg-[#EDF2F4] shadow-lg rounded-lg max-w-[300px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none ">
                     <ul class="block lg:flex">
                         <li class="group">
-                            <a href="#home" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Beranda</a>
+                            <a href="/#home" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Beranda</a>
                         </li>
                         <li class="group">
-                            <a href="#about" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Tentang Kami</a>
+                            <a href="/#about" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Tentang Kami</a>
                         </li>
                         <li class="group">
-                            <a href="#doctor" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Dokter</a>
+                            <a href="/#doctor" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Dokter</a>
                         </li>
                         <li class="group">
-                            <a href="#contact" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Kontak</a>
+                            <a href="/#contact" class="text-base font-semibold text-secondary py-2 mx-5 flex group-hover:text-primary">Kontak</a>
                         </li>
                         @guest
                             <div class=" group my-4 mx-10 lg:my-0 lg:mx-4">
