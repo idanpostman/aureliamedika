@@ -22,7 +22,7 @@
         </section>
 
         <!-- Home Section End -->
-         
+
         <!-- Poli start  -->
 
          <section id="poli" class="pb-8" >
@@ -37,7 +37,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     @foreach ($polis as $poli)
                 <div class="w-full flex items-stretch lg:w-9/12">
                     <div class="max-w-sm mx-auto mb-6 p-6 bg-white border border-gray-200 rounded-lg shadow lg:ml-0 lg:mr-5">
@@ -221,6 +221,21 @@
             <div class="max-w-xl mx-auto text-center">
                 <h2 class="font-bold text-primary text-3xl mb-16 lg:text-5xl">Kontak</h2>
             </div>
+            <div id="alert-1" class="my-alert hidden lg:w-1/2 mx-auto flex items-center p-4 mb-4 text-primary rounded-lg bg-blue-50" role="alert">
+                <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                </svg>
+                <span class="sr-only">Info</span>
+                <div class="ms-3 text-sm font-medium">
+                  Terima Kasih! Pesan anda telah kami terima
+                </div>
+                  <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-blue-50 text-primary rounded-lg  hover:opacity-95 inline-flex items-center justify-center h-8 w-8" data-dismiss-target="#alert-1" aria-label="Close">
+                    <span class="sr-only">Close</span>
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                </button>
+              </div>
             <div class="flex flex-wrap">
 
                  <!-- {{-- Lokasi --}} -->
@@ -264,23 +279,33 @@
                     </div>
                 </div>
             <!-- {{-- Phone End --}} -->
-                    <form action="">
+
+                    <form name="aureliamedika-contact-form" action="">
                         <div class="flex flex-wrap w-full items-center justify-center lg:w-[620px]">
                             <div class="w-full px-4 mb-8">
                                     <label for="name" class="text-base font-bold text-primary">Nama</label>
-                                    <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                                    <input name="nama" type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                                 </div>
                             <div class="w-full px-4 mb-8">
                                 <label for="email" class="text-base font-bold text-primary">Email</label>
-                                <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                                <input name="email" type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                             </div>
                             <div class="w-full px-4 mb-8">
                                 <label for="message" class="text-base font-bold text-primary">Pesan</label>
-                                <textarea type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                                <textarea name="pesan" type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
                             </div>
                             <div class="max-w-[250px] text-center mx-auto lg:w-full">
                                 <div class="flex justify-center items-center">
-                                    <button class="text-base text-center font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                                    <button type="submit" class="btn-kirim text-base text-center font-semibold text-white bg-[#780000] py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <button type="submit" class="btn-loading hidden inline-flex text-base text-center font-semibold text-white bg-[#780000] py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
+                                        <div role="status" class="text-center mx-auto">
+                                            <svg aria-hidden="true" class="inline w-5 h-5  animate-spin fill-primary mr-2" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                                                <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                                            </svg>
+                                        </div><span class="-translate-x-10">Loading....</span></button>
                                 </div>
                             </div>
                         </div>
@@ -289,6 +314,30 @@
             </div>
     </section>
     <!-- {{-- Contact End --}} -->
+
+    <script>
+        // Form Contact
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby_vYb4XWvk1_k98ggqmm5WMSgsZd9HjCEBo7-jrKZVC2BrhQVdyuadGdtFcolBXMbe_Q/exec'
+  const form = document.forms['aureliamedika-contact-form']
+  const btnLoading = document.querySelector('.btn-loading');
+  const btnKirim = document.querySelector('.btn-kirim');
+  const myAlert = document.querySelector('.my-alert');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    btnLoading.classList.toggle('hidden');
+    btnKirim.classList.toggle('hidden');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        btnLoading.classList.toggle('hidden');
+        btnKirim.classList.toggle('hidden');
+        myAlert.classList.toggle('hidden');
+        form.reset();
+        console.log('Success!', response);
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+    </script>
 
 
 
